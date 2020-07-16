@@ -37,10 +37,10 @@ const AddTransaction = () => {
             <form onSubmit={onSubmit}>
                 <div className="form-control">
                     <label htmlFor="text" className="text-label">Text</label>
-                    <input type="text" value={text} onChange={handleTextChange} placeholder="Enter Text......" />
+                    <input type="text" value={text} onChange={handleTextChange} placeholder="Enter Text......" required={true}/>
                     <label htmlFor="amount" className="text-label">Amount</label>
                     <p>(negative - expense, positive - income)</p>
-                    <input type="number" value={amount} onChange={handleAmountChange} placeholder="Enter Amount......" />
+                    <input type="number" value={amount} onChange={handleAmountChange} placeholder="Enter Amount......" required={true}/>
                     <button className="transaction-btn">Add Transaction</button>
                 </div>
             </form>
